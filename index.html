@@ -56,7 +56,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase logo-font">MusicSOL</h1>
@@ -65,15 +65,72 @@
                     <a class="btn btn-primary js-scroll-trigger" href="#contact">Hire Me</a>
                 </div>
             </div>
+        </header> -->
+
+        <!-- data-ride="carousel" -->
+        <header id="carousel" class="carousel slide masthead-nobg" data-ride="carousel">
+            <div class="container d-flex h-100 align-items-center overlay-carousel-text">
+                <div class="mx-auto text-center">
+                    <h1 class="mx-auto my-0 logo-font logo-big">MusicSOL</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Music Lessons for everyone!
+                    </h2>
+                    <a class="btn btn-primary js-scroll-trigger" href="#contact">Sign me up!</a>
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/1-1080.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/2-1080.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/3-1080.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/4-1080.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
         </header>
+        <div class="gradient-overlay"></div>
         <!-- About-->
         <section class="about-section text-center" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2 class="text-white mb-4">About me</h2>
+                        <h2 class="text-white mb-4">About us</h2>
                         <p class="text-white-50">
-                            Music has the power to transport us to another time and place. Yasmin is a diverse classical musician who plays Viola, Piano, and Violin. She received a Masters Degree in Music at Florida International University. She has experience performing, teachings and working with different orchestras in Miami, Ireland, Israel and Cuba. She has taught music classes around Miami and performs regularly with the Broward Symphony Orchestra. Yasmin is a certified teacher in the O’Connor Method, and has many years of experience in the Suzuki method.
+                            Our teachers are active members of their music communities and have occupied a unique place in music education, and mentoring students from 5–99. We are dedicated to the highest standards here at MusicSOL, and we understand the importance of quality service. 
+                        </p>
+                        <p class="text-white-50">
+                            The instructors in our network create their own lesson plans based on what is best for you and your child.
+                        </p>
+
+                        <p class="text-white-50">
+                            Sign up today to have our knowledgeable staff assist you.
+                        </p>
+
+
+                        <p class="text-white-50">
+                            Learn in the comfort and safety of your own home. All lessons currently take place online. We have no binding contracts. We want you to always enjoy the lessons with your teacher. If something changes, you are free to cancel or change teachers at any time.
+                        </p>
+
+                        <p class="text-white-50">
+                            Start your musical journey today! 
                         </p>
                     </div>
                 </div>
@@ -82,11 +139,47 @@
         <!-- services-->
         <section class="projects-section bg-light" id="services">
             <div class="container">
+
+                <div class="row justify-content-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/guitar.jpg" alt="Playing the viola at a wedding" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="bg-black h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="margin-all-3 project-text w-100 my-auto text-lg-left">
+                                    <h4 class="text-white">How it works?</h4>
+                                    <p class="mb-0 text-white-50">
+                                        <ol class="text-white-50">
+                                            <li>
+                                                Tell Us Your Needs
+                                                <br>
+                                                We’ll ask you a few questions so we can put you in touch with the most fitting teachers in your area. 
+                                            </li>
+                                            <li>
+                                                We Assign You to a Teacher
+                                                <br>
+                                                We will put you in touch with a teacher that best matches your needs. 
+                                            </li>
+                                            <li>
+                                                Book Your Lesson
+                                                <br>
+                                                Your assigned teacher will contact you to set up your first lesson. 
+                                            </li>
+                                        </ol>
+
+                                    </p>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Featured Project Row-->
                 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/lessons.jpg" alt="" /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/pianokid.jpg" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
+                        <div class="featured-text text-lg-left">
                             <h4>Lessons</h4>
                             <p class="text-black-50 mb-0">Ages 5 and up. Hands on, One-on-one lesson at your pace. I will guide you through different playing techniques, music theory, and teach you how to best level up your skillset. Best of all, I will be there for you throughout the whole way.</p>
                         </div>
@@ -97,9 +190,9 @@
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/gigs.jpg" alt="Playing the viola at a wedding" /></div>
                     <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-black h-100 project">
                             <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <div class="project-text w-100 my-auto text-lg-left">
                                     <h4 class="text-white">Gigs</h4>
                                     <p class="mb-0 text-white-50">I promise to meet all the needs and requirments for your envisioned event.
                                         <br> From Classical to Pop,
@@ -264,6 +357,18 @@
 
                 
                 </div>
+
+                <div class="row justify-content-center mt-5">
+                    <div class="container text-white text-center small">
+                        Cancellation Policy: 
+
+                    Schedule lessons directly with your instructor. Lessons can take place weekly, or any other schedule that works between you and the teacher. 
+                    
+                    Cancel lessons directly with your instructor. There is no need to call us. :)
+                    Please keep in mind that your instructor teaches many other students and try to cancel with at least a 48 hour notice. 
+               
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -305,7 +410,7 @@
             </div>
         </section> -->
 
-        <hr style="margin: 0; background-color: #9278ff;">
+        <hr style="margin: 0; background-color: #84a5f8;">
 
         <!-- CONTACT SECTION-->        
         <section id="contact" class="contact-section bg-black">
@@ -322,35 +427,105 @@
                   
                     <div class="col-lg-6">
                         
-                        <form class="text-white-50" id="contact-form" action="https://app.99inbound.com/api/e/hRS02j32">
+                        <form class="text-white-50" id="contact-form" action="https://app.99inbound.com/api/e/LyOtUNWP">
+                        
+
                             <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" placeholder="Name">
+                                <label for="student_name">Student Name:</label>
+                                <input required name="student_name" type="text" class="form-control" id="student_name" placeholder="Student Name">
                             </div>
 
                             <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Email Address">  
+                                <label for="parent_name">Parent / Guardian Name: (Optional)</label>
+                                <input name="parent_name" type="text" class="form-control" id="parent_name" placeholder="Parent / Guardian Name">
                             </div>
 
                             <div class="form-group">
-                                <label for="type">Type of service:</label>
-                                <select name='type' id="type" class="form-control">
-                                    <option value="gig">Gig</option>
-                                    <option value="lesson">Lesson</option>
-                                </select>
+                                <label for="email">Email:</label>
+                                <input required type="email" name="email" class="form-control" id="email" placeholder="Email Address">  
                             </div>
-                            <div id="instrument-form-group" class="form-group" hidden>
+
+                            <div class="form-group">
+                                <label for="phone_number">Phone number:</label>
+                                <input required type="tel" name="phone_number" class="form-control" id="phone_number" placeholder="Phone number">  
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age:</label>
+                                <input required name='age' id="age" class="form-control" placeholder="Age" type="number" max="200" min="4" >
+                            </div>
+
+                            <div id="instrument-form-group" class="form-group">
                                 <label for="instrument">Instrument:</label>
-                                <select name='instrument' id="instrument" class="form-control">
+                                <select required name='instrument' id="instrument" class="form-control">
                                     <option>Piano</option>
                                     <option>Violin</option>
                                     <option>Viola</option>
+                                    <option>Cello</option>
+                                    <option>Trumpet</option>
+                                    <option>Voice</option>
+                                    <option>Guitar</option>
                                 </select>
                             </div>
+
                             <div class="form-group">
-                                <label for="message">Message:</label>
-                                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Let's make music together...."></textarea>
+                                <label for="experience">Experience level:</label>
+                                <select required name='experience' id="experience" class="form-control">
+                                    <option>Beginner</option>
+                                    <option>intermediate</option>
+                                    <option>Advanced</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timezone">Timezone:</label>
+                                <select required name="timezone" id="timezone" class="form-control">
+                                    <option>Hawaii Standard Time  - HST (Honolulu)</option>
+                                    <option>Alaska Standard Time - AKST (Anchorage)</option>
+                                    <option>Pacific Standard Time - PST (Los Angeles)</option>
+                                    <option>Mountain Standard Time - MST (Salt Lake City)</option>
+                                    <option>Central Standard Time - CST (Chicago)</option>
+                                    <option>Eastern Standard Time - EST (New York)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-check">
+                                <label style="margin-left: -1.25rem;">
+                                Special needs?
+                                </label>
+                                <br>
+                                <input class="form-check-input" type="radio" name="special_needs" id="special_needs_yes" value="yes" required>
+                                <label class="form-check-label" for="special_needs_yes">
+                                  Yes
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="special_needs" id="special_needs_no" value="no" required>
+                                <label class="form-check-label" for="special_needs_no">
+                                  No
+                                </label>
+                              </div>
+
+                              <br>
+
+                            <div class="form-group">
+                                <label for="special_needs_description">Special needs description (If applicable):</label>
+                                <textarea disabled name="special_needs_description" class="form-control" id="special_needs_description" rows="3" placeholder="Special needs description..."></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="lesson_length">Preferred lesson length:</label>
+                                <select required name='lesson_length' id="lesson_length" class="form-control">
+                                    <option>60 Minutes</option>
+                                    <option>30 Minutes</option>
+                                </select>
+                            </div>
+
+                              
+                            <div class="form-group">
+                                <label for="more_info">Anything else to share?</label>
+                                <textarea name="more_info" class="form-control" id="more_info" rows="3" placeholder=""></textarea>
                             </div>
                             <div class="form-group">
                                 <button class="form-control btn-primary">Send</button>
@@ -427,3 +602,8 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
+
+
+
+	

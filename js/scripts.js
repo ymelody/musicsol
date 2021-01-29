@@ -5,18 +5,18 @@
     */
     (function ($) {
     "use strict"; // Start of use strict
-    let $ifg = $("#instrument-form-group");
-    $("#type").on("change", function(e){
+    // let $ifg = $("#instrument-form-group");
+    // $("#type").on("change", function(e){
        
-        if( $(this).val() === 'lesson' ){
-            $ifg.attr("hidden", false);
-            $ifg.find('select')[0].selectedIndex = 0;
-        }else{
-            $ifg.attr("hidden", true);
-            $ifg.find('select').val('');
-        }
-        console.log($ifg.find('select').val());
-    });
+    //     if( $(this).val() === 'lesson' ){
+    //         $ifg.attr("hidden", false);
+    //         $ifg.find('select')[0].selectedIndex = 0;
+    //     }else{
+    //         $ifg.attr("hidden", true);
+    //         $ifg.find('select').val('');
+    //     }
+    //     console.log($ifg.find('select').val());
+    // });
 
     $("#contact-form").on("submit", (e)=>{
         e.preventDefault();
