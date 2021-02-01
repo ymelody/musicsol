@@ -10428,3 +10428,20 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+@media (max-width: 610px){
+  .logo-big{
+    font-size: 5rem;
+  }
+  .text-under-logo{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 460px){
+  .logo-big{
+    font-size: 4rem;
+  }
+   .text-under-logo{
+    font-size: 1rem;
+  }
+}
