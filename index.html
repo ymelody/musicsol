@@ -491,28 +491,18 @@
                                 </select>
                             </div>
 
-                            <div class="form-check">
-                                <label style="margin-left: -1.25rem;">
-                                Special needs?
-                                </label>
-                                <br>
-                                <input class="form-check-input" type="radio" name="special_needs" id="special_needs_yes" value="yes" required>
-                                <label class="form-check-label" for="special_needs_yes">
-                                  Yes
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="special_needs" id="special_needs_no" value="no" required>
-                                <label class="form-check-label" for="special_needs_no">
-                                  No
-                                </label>
-                              </div>
 
-                              <br>
+                            <div class="form-group">
+                                <label for="special_needs">Special needs?</label>
+                                <select required name="special_needs" id="special_needs" class="form-control">
+                                    <option>No</option>
+                                    <option>Yes</option>
+                                </select>
+                            </div>
 
                             <div class="form-group">
                                 <label for="special_needs_description">Special needs description (If applicable):</label>
-                                <textarea disabled name="special_needs_description" class="form-control" id="special_needs_description" rows="3" placeholder="Special needs description..."></textarea>
+                                <textarea name="special_needs_description" class="form-control" id="special_needs_description" rows="3" placeholder="Special needs description..."></textarea>
                             </div>
 
 
