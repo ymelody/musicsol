@@ -45,10 +45,14 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-@font-face {
+/* @font-face {
   font-family: logofont;
   src: url(../assets/fonts/Montserrat-Thin.ttf);
 }
+@font-face {
+  font-family: logobrace;
+  src: url(../assets/fonts/brace.ttf);
+} */
 
 
 *,
@@ -3073,7 +3077,7 @@ input[type=button].btn-block {
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  /* border: 1px solid rgba(0, 0, 0, 0.15); */
   border-radius: 0.25rem;
 }
 
@@ -4060,6 +4064,15 @@ input[type=button].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+}
+.navbar-brand>img{
+  filter: invert(1);
+  width: 140px;
+}
+@media (max-width: 900px){
+  .navbar-brand>img{
+    width: 120px;
+  } 
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -10148,15 +10161,30 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  /* background-color: #fff;
   background: linear-gradient(90deg, rgba(255,255,255,0.30017944677871145) 0%, rgba(255,255,255,0.9472382703081232) 70%, rgba(255,255,255,1) 100%);
+   */
+  
+  background: transparent;
+  transition: background 0.3s;
 }
+
+#mainNav.navbar-shrink, #mainNav.expanded{
+  background-color: white;
+}
+
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
+  color: white;
+  border: 1px solid white;
+  transition: border 0.3s, color 0.3s;
+}
+#mainNav.navbar-shrink .navbar-toggler, #mainNav.expanded .navbar-toggler{
   color: var(--primary);
   border: 1px solid var(--primary);
 }
+
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
@@ -10167,7 +10195,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
 }
-#mainNav.navbar-shrink .navbar-brand{
+#mainNav.navbar-shrink .navbar-brand, #mainNav.expanded .navbar-brand{
   opacity: 1;
 }
 #mainNav .navbar-nav .nav-item:hover {
@@ -10413,9 +10441,15 @@ body {
 #success-msg{
   display: none;
 }
-.logo-font{
-  font-family: 'logofont', cursive;
+/* .logo-font{
+  font-family: 'logofont', 'Nunito', serif;
 }
+.logo-brace{
+  font-family: 'logobrace', 'Nunito', serif;
+  margin-right: -35px;
+  font-size: 78px;
+} */
+
 .logo-big{
   color: white;
   font-size: 7rem;
@@ -10429,19 +10463,38 @@ body {
   padding: 5rem 0;
 }
 
-@media (max-width: 610px){
+@media (max-width: 900px){
   .logo-big{
-    font-size: 5rem;
+    width: 500px;
   }
   .text-under-logo{
     font-size: 1.5rem;
   }
 }
-@media (max-width: 460px){
+
+@media (max-width: 700px){
   .logo-big{
-    font-size: 4rem;
+    /* font-size: 5rem; */
+    width: 450px;
+  }
+  .text-under-logo{
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 600px){
+  .logo-big{
+    width: 350px;
   }
    .text-under-logo{
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .logo-big{
+    width: 250px;
+  }
+   .text-under-logo{
+    font-size: 0.7rem;
   }
 }

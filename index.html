@@ -15,7 +15,7 @@
         <meta property="og:site_name" content="MusicSOL">
         <meta property="og:url" content="MusicSOL.com">
         <meta property="og:description" content="">
-        <meta property="og:type" content="music.musician">
+        <meta property="og:type" content="website">
         <!-- <meta property="og:image" content="https://musicsol.com/assets/img/bw.jpg"> -->
 
 
@@ -24,7 +24,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>MusicSOL</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon"  href="assets/img/favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -39,8 +39,9 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger logo-font" href="#page-top">MusicSOL</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <a class="navbar-brand js-scroll-trigger logo-font" href="#page-top">MusicSOL</a> -->
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="./assets/img/logo.svg" alt="MusicSOL logo"></a>
+                <button id="menu-btn" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
@@ -51,7 +52,16 @@
                         <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resources">Resources</a></li> -->
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pay">Pay</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Sign up</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#instructors">Instructors</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://docs.google.com/forms/d/e/1FAIpQLScpQQQpD8C60IBbVc4G0jkH-YoRwkOS2KzLqmIa7bmpj74Sgg/viewform?usp=send_form">Instructors</a></li> -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Instructors</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Apply</a>
+                              <a class="dropdown-item" href="#">Our Instructors</a>
+                            </div>
+                        </li> -->
+                        
+                        <!-- <li class="nav-item"><a class="nav-link" href="./login/">Login</a></li> -->
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -73,7 +83,8 @@
         <header id="carousel" class="carousel slide masthead-nobg" data-ride="carousel">
             <div class="container d-flex h-100 align-items-center overlay-carousel-text">
                 <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 logo-font logo-big">MusicSOL</h1>
+                    <!-- <h1 class="mx-auto my-0 logo-font logo-big"><span class="logo-brace">{</span>MusicSOL</h1> -->
+                    <h1 class="mx-auto my-0"><img class="logo-big" src="./assets/img/logo.svg" alt="MusicSOL logo"></h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5 text-under-logo">Music Lessons for everyone!
                     </h2>
                     <a class="btn btn-primary js-scroll-trigger" href="#signup">Sign me up!</a>
@@ -115,6 +126,13 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">About us</h2>
+                        <!-- <p><div id="teachworks-booking-button"></div>
+                            <script type="text/javascript">
+                            var script = document.createElement('script');
+                            script.setAttribute('type', 'text/javascript');
+                            script.setAttribute('src', 'https://companyname123.teachworks.com/booking_button.js?token=VUSYY5LiMNPQ0FabMgXAzQ');
+                            document.body.appendChild(script);
+                            </script></p> -->
                         <p class="text-white-50">
                             Our teachers are active members of their music communities and have occupied a unique place in music education, and mentoring students from 5–99. We are dedicated to the highest standards here at MusicSOL, and we understand the importance of quality service. 
                         </p>
@@ -339,16 +357,15 @@
 
         <hr style="margin: 0; background-color: #84a5f8;">
 
-        <!-- CONTACT SECTION-->        
+        <!-- Student sign up SECTION-->        
         <section id="signup" class="contact-section bg-black">
             
             <div class="container">
 
-                <!-- CONTACT FORM -->
                 <div class="row">
                     <div class="col text-center">
                         <h2 class="text-white mb-4">Sign up now</h2>
-                        <h5 class="text-white mb-4">Teachers are avaible every day of the week!</h5>
+                        <h5 class="text-white mb-4">Sign up now and we will match you with a qualified teacher!</h5>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -428,7 +445,7 @@
 
                             <div class="form-group">
                                 <label for="special_needs_description">Special needs description (If applicable):</label>
-                                <textarea name="special_needs_description" class="form-control" id="special_needs_description" rows="3" placeholder="Special needs description..."></textarea>
+                                <textarea name="special_needs_description" class="form-control" id="special_needs_description" rows="3" placeholder="Special needs description"></textarea>
                             </div>
 
 
@@ -458,6 +475,17 @@
                 
             </div>
         </section>
+
+
+
+        <hr style="margin: 0; background-color: #84a5f8;">
+
+
+
+
+
+
+
         <section id="contact" class="contact-section bg-black">
             <div class="container">
 
@@ -483,7 +511,7 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="mailto:info@musicsol.tk">info@musicsol.tk</a></div>
+                                <div class="small text-black-50"><a href="mailto:info@musicsol.net">info@musicsol.net</a></div>
                             </div>
                         </div>
                     </div>
@@ -519,6 +547,15 @@
         </div>
         <!-- Footer-->
         <!-- <footer class="footer bg-black small text-center text-white-50"><div class="container"></div></footer> -->
+        
+        
+        <!-- <div id="teachworks-booking-widget"></div>
+        <script type="text/javascript">
+        var script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', 'https://companyname123.teachworks.com/booking_widget.js?token=VUSYY5LiMNPQ0FabMgXAzQ');
+        document.body.appendChild(script);
+        </script> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>

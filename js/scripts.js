@@ -69,6 +69,15 @@
         }
     });
 
+    $("#menu-btn").on('click', function(){
+        // the reason why this is reversed is because it checks the value really fast, before it changes.
+        if($(this).attr('aria-expanded')==="false"){
+            $("#mainNav").addClass('expanded');
+        }else{
+            $("#mainNav").removeClass('expanded');
+        }
+    });
+
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
@@ -82,7 +91,7 @@
 
     // Collapse Navbar
     var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
+        if ($("#mainNav").offset().top > 150) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");
