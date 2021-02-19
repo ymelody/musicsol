@@ -10352,10 +10352,23 @@ body {
 .projects-section .featured-text {
   padding: 2rem;
 }
+
+.top-border-color{
+  border-top: 0.25rem solid var(--primary);
+}
+.right-border-color{
+  border-right: 0.25rem solid var(--primary);
+}
+.bottom-border-color{
+  border-bottom: 0.25rem solid var(--primary);
+}
+.left-border-color{
+  border-left: 0.25rem solid var(--primary);
+}
 @media (min-width: 992px) {
   .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid var(--primary);
+    padding: 0 2rem 0 0;
+    border-right: 0.5rem solid var(--primary);
   }
 }
 .projects-section .project-text {
@@ -10372,7 +10385,7 @@ body {
   .projects-section .project-text hr {
     border-color: var(--primary);
     border-width: 0.25rem;
-    width: 30%;
+    /* width: 30%; */
     margin-left:0;
   }
 }
@@ -10497,4 +10510,27 @@ body {
    .text-under-logo{
     font-size: 0.7rem;
   }
+}
+
+.container .teachworks-label{
+  color: white;
+}
+#teachworks-login{
+  margin:auto;
+}
+#teachworks-remote-login{
+  margin-top: 2rem;
+}
+
+
+.vhcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.about-box{
+  font-size: 4rem;
+  background-color: #456b8a80;
+  color: white;
 }

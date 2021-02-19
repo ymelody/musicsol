@@ -17,6 +17,15 @@
     //     }
     //     console.log($ifg.find('select').val());
     // });
+    if(location.hash.includes('#thank-you')){
+        $("#ty-modal").modal();
+        if(location.hash.includes('instructor')){
+            $("#instructor-signup-ty-body").attr("hidden", false);
+        }else{
+            $("#student-signup-ty-body").attr("hidden", false);
+        }
+        location.hash = '';
+    }
 
     $("#contact-form").on("submit", (e)=>{
         e.preventDefault();
