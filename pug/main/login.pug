@@ -1,0 +1,18 @@
+extends ../exclude/layout
+
+block below-header-container
+  .container.d-flex.h-100.align-items-center.overlay-carousel-text
+    .mx-auto.text-center
+      #teachworks-remote-login
+      script(type='text/javascript').
+        var script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', 'https://musicsol.teachworks.com/remote.js' + location.search);
+        document.body.appendChild(script);
+  include ../exclude/carousel-mini
+
+block content
+  .gradient-overlay
+
+block continue_scripts
+  script(src='js/scripts.js')

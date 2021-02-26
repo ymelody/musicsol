@@ -5,18 +5,8 @@
     */
     (function ($) {
     "use strict"; // Start of use strict
-    // let $ifg = $("#instrument-form-group");
-    // $("#type").on("change", function(e){
-       
-    //     if( $(this).val() === 'lesson' ){
-    //         $ifg.attr("hidden", false);
-    //         $ifg.find('select')[0].selectedIndex = 0;
-    //     }else{
-    //         $ifg.attr("hidden", true);
-    //         $ifg.find('select').val('');
-    //     }
-    //     console.log($ifg.find('select').val());
-    // });
+
+
     if(location.hash.includes('#thank-you')){
         $("#ty-modal").modal();
         if(location.hash.includes('instructor')){

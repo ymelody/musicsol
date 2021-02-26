@@ -1,0 +1,39 @@
+extends ../exclude/layout
+
+block below-header-container
+  .container.d-flex.h-100.align-items-center.overlay-carousel-text
+    .mx-auto.text-center
+      .card#main-card(style='width: 18rem;')
+        img.card-img-top(src='' alt='')
+        #main-card-body.card-body(hidden='')
+          h5.card-title
+          p.card-text
+          | Please click the button below to confirm taking on the student
+          br
+          br
+          a.btn.btn-primary#confirm-student(href='#') Confirm student
+        #alreadyassigned.card-body(hidden='')
+          h5.card-title Student already assigned
+          p.card-text
+          | Looks like this student has already been assigned to a teacher.
+          br
+          br
+          a.btn.btn-primary#confirm-student.disabled(tabindex="-1" role="button" aria-disabled="true") Confirm student
+  include ../exclude/carousel-mini
+
+block content
+  .gradient-overlay
+  #ty-modal.modal(tabindex='-1')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5.modal-title Thank you!
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true') &times;
+        .modal-body.text-center
+          p#assign-confirm-body
+            br
+            | Student has been assigned to you successfully!
+
+block continue_scripts
+  script(src='js/confirm-student.js')

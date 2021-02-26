@@ -1,0 +1,24 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run pugw && npm run sass",
+    "pug": "pug files/pug/popup.pug --out files/html --pretty",
+    "pugw": "pug pug/main/ --out ./ --pretty --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w files/sass -o files/css --output-style compressed",
+    "build": "webpack --config webpack.prod.js",
+    "watch": "webpack --watch --config webpack.dev.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

@@ -1,0 +1,252 @@
+extends ../exclude/layout
+
+
+block below-header-container
+  .container.d-flex.h-100.align-items-center.overlay-carousel-text
+    .mx-auto.text-center
+      h1.mx-auto.my-0
+        img.logo-big(src='./assets/img/logo.svg' alt='MusicSOL logo')
+      h2.text-white-50.mx-auto.mt-2.mb-5.text-under-logo
+        | Music Lessons for everyone!
+      a.btn.btn-primary.js-scroll-trigger(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up!
+
+  include ../exclude/carousel-full
+
+block content
+  .gradient-overlay
+  // About
+  section#about.about-section.text-center
+    .container
+      .row
+        .col-lg-8.mx-auto
+          h2.text-white.mb-4 About us
+          //
+            <p><div id="teachworks-booking-button"></div>
+            <script type="text/javascript">
+            var script = document.createElement('script');
+            script.setAttribute('type', 'text/javascript');
+            script.setAttribute('src', 'https://companyname123.teachworks.com/booking_button.js?token=VUSYY5LiMNPQ0FabMgXAzQ');
+            document.body.appendChild(script);
+            </script></p>
+          p.text-white-50
+            span MusicSOL&nbsp;
+          p.text-white-50
+            | (pronounced myo&#x35E;oziks&omacr;l, SOL being the 5th solfege scale degree, similar sound to soul.)
+          p.text-white-50
+            | MusicSOL, LLC. is one of the world&rsquo;s premiere online music institutes. Our unique conservatory-style learning environment engages our students and encourages them to take their education past the classroom, through world-class education and performances. MusicSOL students study with our distinguished faculty from over 20 countries and nearly every state. MusicSOL teachers are active members of their music communities and have occupied a unique place in music education. Our talented list of instructors come from Italy, Spain, Israel, Greece, England, Mexico, Canada, United States and more!
+          p.text-white-50
+            span
+              | MusicSOL is an online conservatory-style music learning program. Our students not only receive lessons on their instrument/s of choice, but also receive instruction in music theory.
+          p.text-white-50
+            span
+              | The instructors in our network create their own unique lesson plans based on what is best suited for each individual student.
+          p.text-white-50
+            span Sign up today to have our knowledgeable staff assist you.&nbsp;
+          p.text-white-50
+            span
+              | COVID19 precautions: Learn in the comfort and safety of your own home. All lessons currently take place online. We have no binding contracts. We want you to always enjoy the lessons with your teacher. If something changes, you are free to cancel or change teachers at any time.
+          p.text-white-50
+            span Start your musical journey today!
+  // howitworks
+  section#howitworks.projects-section.bg-light
+    .container
+      // How it works?
+      .row.justify-content-center.no-gutters.mb-4.mb-lg-5
+        .col-lg-6
+          h2.vhcenter.about-box
+            | How it works?
+        .col-lg-6
+          .bg-black.h-100.project
+            .d-flex.h-100
+              .margin-all-3.project-text.w-100.my-auto.text-lg-left
+                p.mb-0.text-white-50
+                  ol.text-white-50
+                    li
+                      | Tell Us Your Needs
+                      br
+                      |                                                 We&rsquo;ll ask you a few questions so we can put you in touch with the most fitting teachers.
+                    li
+                      | We Assign You to a Teacher
+                      br
+                      |                                                 We will put you in touch with a teacher that best matches your needs.
+                    li
+                      | Book Your Lesson
+                      br
+                      |                                                 Your assigned teacher will contact you to set up your first lesson.
+                hr.d-none.d-lg-block.mb-0.mr-0
+      // Our mission
+      .row.justify-content-center.no-gutters.mb-4.mb-lg-5
+        .col-xl-7.col-lg-7
+          h2.vhcenter.about-box
+            | Our Mission
+        .col-xl-5.col-lg-5.order-lg-first
+          .featured-text.text-lg-left
+            p.text-black-50.mb-0
+              | The mission of the MusicSOL is to provide aspiring young musicians from across the country with an opportunity to study with world-class artists and to provide our students with a music education of the highest artistic standards.
+      // Faculty
+      .row.justify-content-center.no-gutters.mb-4.mb-lg-5
+        .col-lg-4
+          span.vhcenter.about-box
+            | Faculty
+        .col-lg-8
+          .bg-black.h-100.project
+            .d-flex.h-100
+              .margin-all-3.project-text.w-100.my-auto.text-lg-left
+                p.mb-0.text-white-50.right-border-color
+                  | MusicSOL Instructors come from leading music conservatories including Curtis, Berklee, Cleveland Institute of Music, Eastman, Indiana, Oberlin, Juilliard, Manhattan School of Music, Mannes, New England Conservatory, and University of Southern California, among others.
+      // Recitals
+      .row.justify-content-center.no-gutters.mb-4.mb-lg-5
+        .col-xl-5.col-lg-5
+          h2.vhcenter.about-box
+            | Recitals
+        .col-xl-7.col-lg-7.order-lg-first
+          .featured-text.text-lg-left
+            p.text-black-50.mb-0
+              | MusicSOL firmly believes that it is important for young musicians to be exposed to live performances. Being an online conservatory program doesn&rsquo;t stop our students from having performance opportunities throughout the year. Our recital program aims to give back, by providing free mini concerts to the community.
+      // Music Theory
+      .row.justify-content-center.no-gutters.mb-4.mb-lg-5
+        .col-lg-6
+          span.vhcenter.about-box
+            | Music Theory
+        .col-lg-6
+          .bg-black.h-100.project
+            .d-flex.h-100
+              .margin-all-3.project-text.w-100.my-auto.text-lg-left
+                p.mb-0.text-white-50
+                  | All MusicSOL students are enrolled in weekly group music theory classes. Music theory plays a central role in the education of every MusicSOL student. The study of theory includes a wide range of subjects, from hands-on training in musical skills to more advanced research on musical structure and music&rsquo;s composition. The goal of the MusicSOL theory department is not only to provide students with a solid technical foundation, but also to encourage their ongoing intellectual engagement with music as an art form.
+                p.bottom-border-color.mb-0.text-white-50
+                  | Music Theory courses begin every month and are capped at 10 students per class to create the optimal learning environment for students of all ages. 
+                  br
+                  br
+      // Community
+      .row.justify-content-center.no-gutters.mb-4.mb-lg-5
+        .col-xl-7.col-lg-7
+          h2.vhcenter.about-box
+            | Community
+        .col-xl-5.col-lg-5.order-lg-first
+          .featured-text.text-lg-left
+            p.text-black-50.mb-0
+              | MusicSOL is more than a music school. We strive to build a safe learning community. Community is a fundamental aspect of the music experience. Music unites people, forming bonds that might not exist otherwise. Music can connect different cultures, promote diversity and friendship. Music encourages creative thinking, discipline, leadership, and problem solving. As the great Hans Christian Andersen once said, &ldquo;Where words fail, music speaks.&rdquo;
+            p.text-black-50.mb-0
+              | MusicSOL students are provided with a safe space to practice together after class, discuss topics studied, and create a strong friendship bond that will last a lifetime.
+  // Student sign up SECTION
+  section#signup.contact-section.bg-black
+    .container
+      .row
+        .col.text-center
+          h2.text-white.mb-4 Sign up now
+          h5.text-white.mb-4 Sign up now and we will match you with a qualified teacher!
+          h6.text-white.mb-4 All students take weekly private lessons + weekly group music theory classes.
+      .row.justify-content-center
+        .col-lg-6.text-center
+          a.btn.btn-primary.js-scroll-trigger(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up!
+  hr(style='margin: 0; background-color: #84a5f8;')
+  section#contact.contact-section.bg-black
+    .container
+      .row
+        .col.text-center
+          h2.text-white.mb-4 Contact us
+      .row
+        //
+          <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+          <div class="card-body text-center">
+          <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+          <h4 class="text-uppercase m-0">Address</h4>
+          <hr class="my-4" />
+          <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+          </div>
+          </div>
+          </div>
+        .col-md-12.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-envelope.text-primary.mb-2
+              h4.text-uppercase.m-0 Email
+              hr.my-4
+              .small.text-black-50
+                a(href='mailto:info@musicsol.net') info@musicsol.net
+        //
+          <div class="col-md-6 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+          <div class="card-body text-center">
+          <i class="fas fa-mobile-alt text-primary mb-2"></i>
+          <h4 class="text-uppercase m-0">Phone</h4>
+          <hr class="my-4" />
+          <a class="small text-black-50" href="tel:+1 (786) 353-6146">+1 (786) 353-6146</a>
+          </div>
+          </div>
+          </div>
+      //
+        <div class="social d-flex justify-content-center">
+        <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+        <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+        <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+        </div>
+  #success-msg.container.fixed-bottom.text-center
+    .row
+      .col
+        .alert.alert-success(role='alert')
+          | Thank you! We will get back to you as soon as possible! :)
+  // Footer
+  // Footer
+  footer.bg-black.text-white.text-center.text-lg-start(style='border-top: 1px solid var(--primary);')
+    // Grid container
+    .container.p-4
+      // Grid row
+      .row
+        // Grid column
+        .col-lg-6.col-md-12.mb-4.mb-md-0
+          h5.text-uppercase Our Mission
+          p
+            | The mission of the MusicSOL is to provide aspiring young musicians from across the country with an opportunity to study with world-class artists and to provide our students with a music education of the highest artistic standards.
+        // Grid column
+        // Grid column
+        .col-lg-3.col-md-6.mb-4.mb-md-0
+          ul.list-unstyled.mb-0
+            li
+              a.nav-link.js-scroll-trigger(href='#page-top') Home
+            li
+              a.nav-link.js-scroll-trigger(href='#about') About
+            li
+              a.nav-link.js-scroll-trigger(href='#howitworks') How it works
+            li
+              a.nav-link.js-scroll-trigger(href='https://musicsol.teachworks.com/form/student-signup' target='_new') Student sign up
+        // Grid column
+        // Grid column
+        .col-lg-3.col-md-6.mb-4.mb-md-0
+          ul.list-unstyled
+            li
+              a.nav-link.js-scroll-trigger(href='https://blog.musicsol.net') Blog
+            li
+              a.nav-link.js-scroll-trigger(href='#') Work with us
+            li
+              a.nav-link.js-scroll-trigger(href='./terms-of-service.html') Terms of service
+        // Grid column
+      // Grid row
+    // Grid container
+    // Copyright
+    .bg-white.text-black.text-center.p-3
+      | &copy; 2020 Copyright MusicSOL
+    // Copyright
+  // Footer
+  #ty-modal.modal(tabindex='-1')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5.modal-title Thank you!
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+            span(aria-hidden='true') &times;
+        .modal-body.text-center
+          p#student-signup-ty-body(hidden='')
+            | Thank you for signing up.
+            br
+            |                         A teacher will contact you shortly &#x1F3B6;&#x1F60A;&#x1F3B6;
+          p#instructor-signup-ty-body(hidden='')
+            | Thank you for registering.
+            br
+            |                           We will review your application and get back to you shortly &#x1F3B6;&#x1F60A;&#x1F3B6;
+
+
+block continue_scripts
+  script(src='js/scripts.js')
