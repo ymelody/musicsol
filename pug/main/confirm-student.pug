@@ -3,8 +3,10 @@ extends ../exclude/layout
 block below-header-container
   .container.d-flex.h-100.align-items-center.overlay-carousel-text
     .mx-auto.text-center
-      .card#main-card(style='width: 18rem;')
-        img.card-img-top(src='' alt='')
+      h1.mx-auto.my-0
+        img.logo-big(src='./assets/img/logo.svg' alt='MusicSOL logo')
+      .card#main-card(style='width: 18rem; margin: auto; margin-top: 50px;')
+        //- img.card-img-top(src='' alt='')
         #main-card-body.card-body(hidden='')
           h5.card-title
           p.card-text
@@ -18,7 +20,7 @@ block below-header-container
           | Looks like this student has already been assigned to a teacher.
           br
           br
-          a.btn.btn-primary#confirm-student.disabled(tabindex="-1" role="button" aria-disabled="true") Confirm student
+          a.btn.btn-primary#confirm-student.disabled(tabindex="-1" role="button" aria-disabled="true") Sorry :(
   include ../exclude/carousel-mini
 
 block content
@@ -34,6 +36,11 @@ block content
           p#assign-confirm-body
             br
             | Student has been assigned to you successfully!
+            br
+            | Please log into your account to schedule the student.
+            br
+            a(href='https://musicsol.net/login') Click here to log in
 
 block continue_scripts
   script(src='js/confirm-student.js')
+  script(src='js/scripts.js')

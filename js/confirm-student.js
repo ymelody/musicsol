@@ -1,12 +1,18 @@
 const urlParams = new URLSearchParams(window.location.search);
 const uid = urlParams.get('uid');
-const email = urlParams.get('email');
+let email = urlParams.get('email');
 const fname = urlParams.get('fname');
 const instrument = urlParams.get('instrument');
-const base_url = 'https://musicsol-server.herokuapp.com/';
+// const base_url = 'https://musicsol-server.herokuapp.com';
+const base_url = 'http://localhost:8000';
+
+// attach missing pluses from emails
+email = encodeURIComponent(email.replace(/\s/g,'+'));
+
 
 function confirmStudent(e){
   e.preventDefault();
+  $(e.target).off('click');
   fetch(`${base_url}/assign/${uid}/${email}`)
   .then(data=>data.text())
   .then(data=>{
@@ -36,29 +42,9 @@ function startupcheck(){
   })
 }
 
-
-
-
-
-
-
-$(function(){
-
-
-  $("#menu-btn").on('click', function(){
-    // the reason why this is reversed is because it checks the value really fast, before it changes.
-    if($(this).attr('aria-expanded')==="false"){
-        $("#mainNav").addClass('expanded');
-    }else{
-        $("#mainNav").removeClass('expanded');
-    }
-  });
-
-
+$(document).on('hide.bs.modal', function(){
+  location = "https://musicsol.net";
 });
-
-
-
 
 
 

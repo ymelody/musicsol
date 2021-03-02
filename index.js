@@ -18,7 +18,8 @@ var mimeLookup = {
     '.ttf': 'font/ttf',
     '.jpg': 'image/jpeg',
     '.ico': 'x-icon',
-    '.svg': 'image/svg+xml'
+    '.svg': 'image/svg+xml',
+    '.png': 'image/png'
 }; 
 
 var server = http.createServer(function (req, res) {

@@ -130,16 +130,37 @@ block content
             p.text-black-50.mb-0
               | MusicSOL students are provided with a safe space to practice together after class, discuss topics studied, and create a strong friendship bond that will last a lifetime.
   // Student sign up SECTION
-  section#signup.contact-section.bg-black
+  section#pricing.contact-section.bg-black
     .container
       .row
         .col.text-center
-          h2.text-white.mb-4 Sign up now
+          h2.text-white.mb-4 Pricing
           h5.text-white.mb-4 Sign up now and we will match you with a qualified teacher!
           h6.text-white.mb-4 All students take weekly private lessons + weekly group music theory classes.
-      .row.justify-content-center
+        //- .row.justify-content-center
+        //-   .col-lg-6.text-center
+        //-     a.btn.btn-primary.js-scroll-trigger(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up!
+      .row.justify-content-center 
         .col-lg-6.text-center
-          a.btn.btn-primary.js-scroll-trigger(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up!
+          .card
+            .card-body
+              h5.card-title $105 / Twice a week
+              h6.card-subtitle.mb-2.text-muted Recommended for beginners and up
+              p.card-text
+                | Weekly 60 minute private lesson on the instrument of your choice with weekly 40 minute group theory classes.
+              a.card-link(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up
+              
+        .col-lg-6.text-center
+          .card
+            .card-body
+              h5.card-title $75 / Twice a week
+              h6.card-subtitle.mb-2.text-muted Recommended for first timers
+              p.card-text
+                | Weekly 30 minute private lesson on the instrument of your choice with weekly 40 minute group theory classes.
+              a.card-link(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up
+              
+
+
   hr(style='margin: 0; background-color: #84a5f8;')
   section#contact.contact-section.bg-black
     .container
@@ -147,17 +168,6 @@ block content
         .col.text-center
           h2.text-white.mb-4 Contact us
       .row
-        //
-          <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-          <div class="card-body text-center">
-          <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-          <h4 class="text-uppercase m-0">Address</h4>
-          <hr class="my-4" />
-          <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-          </div>
-          </div>
-          </div>
         .col-md-12.mb-3.mb-md-0
           .card.py-4.h-100
             .card-body.text-center
@@ -166,69 +176,13 @@ block content
               hr.my-4
               .small.text-black-50
                 a(href='mailto:info@musicsol.net') info@musicsol.net
-        //
-          <div class="col-md-6 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-          <div class="card-body text-center">
-          <i class="fas fa-mobile-alt text-primary mb-2"></i>
-          <h4 class="text-uppercase m-0">Phone</h4>
-          <hr class="my-4" />
-          <a class="small text-black-50" href="tel:+1 (786) 353-6146">+1 (786) 353-6146</a>
-          </div>
-          </div>
-          </div>
-      //
-        <div class="social d-flex justify-content-center">
-        <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-        <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-        <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-        </div>
+  
   #success-msg.container.fixed-bottom.text-center
     .row
       .col
         .alert.alert-success(role='alert')
           | Thank you! We will get back to you as soon as possible! :)
   // Footer
-  // Footer
-  footer.bg-black.text-white.text-center.text-lg-start(style='border-top: 1px solid var(--primary);')
-    // Grid container
-    .container.p-4
-      // Grid row
-      .row
-        // Grid column
-        .col-lg-6.col-md-12.mb-4.mb-md-0
-          h5.text-uppercase Our Mission
-          p
-            | The mission of the MusicSOL is to provide aspiring young musicians from across the country with an opportunity to study with world-class artists and to provide our students with a music education of the highest artistic standards.
-        // Grid column
-        // Grid column
-        .col-lg-3.col-md-6.mb-4.mb-md-0
-          ul.list-unstyled.mb-0
-            li
-              a.nav-link.js-scroll-trigger(href='#page-top') Home
-            li
-              a.nav-link.js-scroll-trigger(href='#about') About
-            li
-              a.nav-link.js-scroll-trigger(href='#howitworks') How it works
-            li
-              a.nav-link.js-scroll-trigger(href='https://musicsol.teachworks.com/form/student-signup' target='_new') Student sign up
-        // Grid column
-        // Grid column
-        .col-lg-3.col-md-6.mb-4.mb-md-0
-          ul.list-unstyled
-            li
-              a.nav-link.js-scroll-trigger(href='https://blog.musicsol.net') Blog
-            li
-              a.nav-link.js-scroll-trigger(href='#') Work with us
-            li
-              a.nav-link.js-scroll-trigger(href='./terms-of-service.html') Terms of service
-        // Grid column
-      // Grid row
-    // Grid container
-    // Copyright
-    .bg-white.text-black.text-center.p-3
-      | &copy; 2020 Copyright MusicSOL
-    // Copyright
   // Footer
   #ty-modal.modal(tabindex='-1')
     .modal-dialog
