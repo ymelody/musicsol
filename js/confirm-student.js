@@ -3,8 +3,8 @@ const uid = urlParams.get('uid');
 let email = urlParams.get('email');
 const fname = urlParams.get('fname');
 const instrument = urlParams.get('instrument');
-// const base_url = 'https://musicsol-server.herokuapp.com';
-const base_url = 'http://localhost:8000';
+const base_url = 'https://musicsol-server.herokuapp.com';
+// const base_url = 'http://localhost:8000';
 
 // attach missing pluses from emails
 email = encodeURIComponent(email.replace(/\s/g,'+'));
