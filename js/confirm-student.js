@@ -6,9 +6,12 @@ const instrument = urlParams.get('instrument');
 const base_url = 'https://musicsol-server.herokuapp.com';
 // const base_url = 'http://localhost:8000';
 
-// attach missing pluses from emails
-email = encodeURIComponent(email.replace(/\s/g,'+'));
+if(email !== null){
+  
+  // attach missing pluses from emails
+  email = encodeURIComponent(email.replace(/\s/g,'+'));
 
+}
 
 function confirmStudent(e){
   e.preventDefault();
@@ -29,7 +32,7 @@ function startupcheck(){
   .then(data=>data.text())
   .then(data=>{
     if(data==='ok'){
-      $("#main-card-body .card-title").text(fname);
+      $("#main-card-body .card-title .fname").text(fname);
       $(".card-img-top").attr("src", './assets/img/awaitingteacher.png');
       // $("#main-card-body")
       $("#main-card-body").attr("hidden", false);
