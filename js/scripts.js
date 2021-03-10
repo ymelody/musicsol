@@ -17,32 +17,6 @@
         location.hash = '';
     }
 
-    $("#contact-form").on("submit", (e)=>{
-        e.preventDefault();
-
-        let ajaxObj = {};
-        let $form = $(e.target);
-        var postURL = $form.attr("action");
-        $form.find("input, select, textarea").each(function(val) {
-            var name = $(this).attr("name");
-            if (name !== undefined && name !== "" &&
-                name !== null) {
-                ajaxObj[name] = $(this).val();
-            }
-        });
-        $.post(postURL, ajaxObj, function(){ 
-            let $successMsg = $("#success-msg");
-            $successMsg.show("fast", ()=>{
-                setTimeout(()=>{
-                    $successMsg.hide("fast");
-                },10000)
-            });
-            $form[0].reset();
-            $ifg.attr("hidden", true);
-        });
-
-        return false;
-    });
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
