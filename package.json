@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run pugw && npm run sass",
-    "pug": "pug files/pug/popup.pug --out files/html --pretty",
+    "pug":  "pug pug/main/ --out ./",
     "pugw": "pug pug/main/ --out ./ --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -w files/sass -o files/css --output-style compressed",
