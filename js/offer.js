@@ -40,7 +40,7 @@ $("#offerForm").on("submit", (e)=>{
         }
     });
 
-    ajaxObj['source'] = urlParams.f;
+    ajaxObj['source'] = urlParams.get('f');
      console.log(ajaxObj);
      $.post(postURL, ajaxObj, function(res){
         if(res === 'ok'){
