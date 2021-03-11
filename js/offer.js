@@ -1,3 +1,5 @@
+const urlParams = new URLSearchParams(window.location.search);
+
 function calcHeight(element) {
     const height = element.offsetHeight,
         style = window.getComputedStyle(element)
@@ -37,6 +39,8 @@ $("#offerForm").on("submit", (e)=>{
             ajaxObj[name] = $(this).val();
         }
     });
+
+    ajaxObj['source'] = urlParams.f;
      console.log(ajaxObj);
      $.post(postURL, ajaxObj, function(res){
         if(res === 'ok'){
