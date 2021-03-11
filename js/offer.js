@@ -30,7 +30,7 @@ $("#offerForm").on("submit", (e)=>{
     let ajaxObj = {};
     let $form = $(e.target);
     var postURL = $form.attr("action");
-    postURL = 'http://localhost:8000/offer';
+    // postURL = 'http://localhost:8000/offer';
     $form.find("input, select, textarea").each(function(val) {
         var name = $(this).attr("name");
         if (name !== undefined && name !== "" && name !== null) {
