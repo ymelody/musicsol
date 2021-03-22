@@ -29,14 +29,8 @@ block content
     script(src='https://cdn.teachworks.com/tw_website_profiles.js' type='text/javascript')
     script.
       twProfiles("U2TDDxTgAyJgVmw2eqqfKw","teachworks-profiles");
-      // identify an element to observe
       const elementToObserve = document.querySelector("#teachworks-profiles");
-
-      // create a new instance of `MutationObserver` named `observer`,
-      // passing it a callback function
       const observer = new MutationObserver(function() {
-        
-        console.log('running the OBSERVER...................');
         let intervalID = setInterval(function(){
           if( document.querySelectorAll('.tw-photo').length > 0 ){
             clearInterval(intervalID);
@@ -47,7 +41,6 @@ block content
       });
 
       function fixUI(){
-        console.log('running the fix.....................');
         let $twlist = $(document.querySelectorAll('#tw-listing'))
         $twlist.each(function(val){
             let $imgWrp = $('<div class="tw-img-wrapper"></div>');
@@ -56,12 +49,7 @@ block content
         });
       }
 
-      // call `observe()` on that MutationObserver instance,
-      // passing it the element to observe, and the options object
       observer.observe(elementToObserve, {childList: true});
-
-      
-
 
 block continue_scripts
   script(src='js/scripts.js')
