@@ -1995,7 +1995,7 @@ pre code {
 .table-responsive > .table-bordered {
   border: 0;
 }
-
+/*! uncss:ignore */
 .form-control {
   display: block;
   width: 100%;
@@ -2011,7 +2011,9 @@ pre code {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .form-control {
     transition: none;
   }
@@ -2426,7 +2428,7 @@ textarea.form-control {
     margin-bottom: 0;
   }
 }
-
+/*! uncss:ignore */
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -2446,6 +2448,7 @@ textarea.form-control {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .btn {
     transition: none;
   }
@@ -3008,11 +3011,12 @@ input[type=reset].btn-block,
 input[type=button].btn-block {
   width: 100%;
 }
-
+/*! uncss:ignore */
 .fade {
   transition: opacity 0.15s linear;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .fade {
     transition: none;
   }
@@ -3024,7 +3028,7 @@ input[type=button].btn-block {
 .collapse:not(.show) {
   display: none;
 }
-
+/*! uncss:ignore */
 .collapsing {
   position: relative;
   height: 0;
@@ -3032,6 +3036,7 @@ input[type=button].btn-block {
   transition: height 0.35s ease;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .collapsing {
     transition: none;
   }
@@ -3660,6 +3665,7 @@ input[type=button].btn-block {
   pointer-events: all;
   border-radius: 0.5rem;
 }
+/*! uncss:ignore */
 .custom-switch .custom-control-label::after {
   top: calc(0.25rem + 2px);
   left: calc(-2.25rem + 2px);
@@ -3669,6 +3675,7 @@ input[type=button].btn-block {
   border-radius: 0.5rem;
   transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+/*! uncss:ignore */
 @media (prefers-reduced-motion: reduce) {
   .custom-switch .custom-control-label::after {
     transition: none;
@@ -3827,6 +3834,7 @@ input[type=button].btn-block {
 .custom-range::-moz-focus-outer {
   border: 0;
 }
+/*! uncss:ignore */
 .custom-range::-webkit-slider-thumb {
   width: 1rem;
   height: 1rem;
@@ -3840,6 +3848,7 @@ input[type=button].btn-block {
           appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .custom-range::-webkit-slider-thumb {
     -webkit-transition: none;
     transition: none;
@@ -3857,6 +3866,7 @@ input[type=button].btn-block {
   border-color: transparent;
   border-radius: 1rem;
 }
+/*! uncss:ignore */
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
@@ -3868,6 +3878,7 @@ input[type=button].btn-block {
   -moz-appearance: none;
        appearance: none;
 }
+/*! uncss:ignore */
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
     -moz-transition: none;
@@ -3886,6 +3897,7 @@ input[type=button].btn-block {
   border-color: transparent;
   border-radius: 1rem;
 }
+/*! uncss:ignore */
 .custom-range::-ms-thumb {
   width: 1rem;
   height: 1rem;
@@ -3900,6 +3912,7 @@ input[type=button].btn-block {
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .custom-range::-ms-thumb {
     -ms-transition: none;
     transition: none;
@@ -3941,13 +3954,14 @@ input[type=button].btn-block {
 .custom-range:disabled::-ms-thumb {
   background-color: #adb5bd;
 }
-
+/*! uncss:ignore */
 .custom-control-label::before,
 .custom-file-label,
 .custom-select {
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .custom-control-label::before,
 .custom-file-label,
 .custom-select {
@@ -4741,7 +4755,7 @@ input[type=button].btn-block {
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
 }
-
+/*! uncss:ignore */
 .badge {
   display: inline-block;
   padding: 0.25em 0.4em;
@@ -4755,6 +4769,7 @@ input[type=button].btn-block {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .badge {
     transition: none;
   }
@@ -5075,7 +5090,7 @@ a.badge-black:focus, a.badge-black.focus {
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
-
+/*! uncss:ignore */
 .progress-bar {
   display: flex;
   flex-direction: column;
@@ -5088,6 +5103,7 @@ a.badge-black:focus, a.badge-black.focus {
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .progress-bar {
     transition: none;
   }
@@ -5525,11 +5541,13 @@ a.close.disabled {
   margin: 0.5rem;
   pointer-events: none;
 }
+/*! uncss:ignore */
 .modal.fade .modal-dialog {
   transition: transform 0.3s ease-out;
   transform: translate(0, -50px);
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .modal.fade .modal-dialog {
     transition: none;
   }
@@ -5959,7 +5977,7 @@ a.close.disabled {
   clear: both;
   content: "";
 }
-
+/*! uncss:ignore */
 .carousel-item {
   position: relative;
   display: none;
@@ -5990,6 +6008,7 @@ a.close.disabled {
   background-size: cover;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .carousel-item {
     transition: none;
   }
@@ -6010,7 +6029,7 @@ a.close.disabled {
 .active.carousel-item-left {
   transform: translateX(-100%);
 }
-
+/*! uncss:ignore */
 .carousel-fade .carousel-item {
   opacity: 0;
   transition-property: opacity;
@@ -6022,6 +6041,7 @@ a.close.disabled {
   z-index: 1;
   opacity: 1;
 }
+/*! uncss:ignore */
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
   z-index: 0;
@@ -6029,12 +6049,13 @@ a.close.disabled {
   transition: opacity 0s 0.6s;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
     transition: none;
   }
 }
-
+/*! uncss:ignore */
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -6051,6 +6072,7 @@ a.close.disabled {
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .carousel-control-prev,
 .carousel-control-next {
     transition: none;
@@ -6102,6 +6124,7 @@ a.close.disabled {
   margin-left: 15%;
   list-style: none;
 }
+/*! uncss:ignore */
 .carousel-indicators li {
   box-sizing: content-box;
   flex: 0 1 auto;
@@ -6119,6 +6142,7 @@ a.close.disabled {
   transition: opacity 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
+  /*! uncss:ignore */
   .carousel-indicators li {
     transition: none;
   }
@@ -10158,7 +10182,7 @@ h3 {
 body {
   letter-spacing: 0.0625em;
 }
-
+/*! uncss:ignore */
 #mainNav {
   min-height: 3.5rem;
   /* background-color: #fff;
@@ -10172,7 +10196,7 @@ body {
 #mainNav.navbar-shrink, #mainNav.expanded{
   background-color: white;
 }
-
+/*! uncss:ignore */
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
@@ -10188,6 +10212,7 @@ body {
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
+/*! uncss:ignore */
 #mainNav .navbar-brand {
   color: #000000;
   font-weight: 700;
@@ -10208,6 +10233,7 @@ body {
   background-color: transparent;
 }
 @media (min-width: 992px) {
+  /*! uncss:ignore */
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -10221,6 +10247,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
     display: none;
   }
+  /*! uncss:ignore */
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
@@ -10727,6 +10754,7 @@ body {
   margin-left: -50px;
   margin-top: -50px;
 }
+/*! uncss:ignore */
 .scroll-down a {
   display: block;
   opacity: 0;

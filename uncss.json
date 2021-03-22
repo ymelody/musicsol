@@ -1,0 +1,9 @@
+{
+    "banner": "false",
+    "ignore": [
+        "/navbar-shrink/",
+        "/expanded/",
+        "/modal.fade/",
+        "/carousel-item/"
+    ]
+}
