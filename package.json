@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run pugw && npm run sass",
+    "dev": "concurrently \"npm run pugw\" \"npm run sass\" ",
     "pug-build": "pug pug/main/ --out ./",
     "pugw": "pug pug/main/ --out ./ --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w files/sass -o files/css --output-style compressed",
+    "sass": "node-sass -w ./sass -o ./css --output-style compressed",
     "sass-build": "node-sass ./sass -o ./css --output-style compressed",
 
     "test-uncss": "npm run sass-build && npm run uncss",

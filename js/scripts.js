@@ -70,8 +70,20 @@
             $("#mainNav").removeClass("navbar-shrink");
         }
     };
+
+
+
+    function set100vhVar() {
+        // If less than most tablets, set CSS var to window height.
+        let value = "100vh"
+        if (window.innerWidth <= 1024) {
+            value = `${window.innerHeight}px`
+        }
+        document.documentElement.style.setProperty("--real100vh", value)
+    }
+    set100vhVar();
     // Collapse now if page is not at top
-    navbarCollapse();
+    // navbarCollapse();
     // Collapse the navbar when page is scrolled
-    $(window).scroll(navbarCollapse);
+    // $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict

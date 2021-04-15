@@ -1,18 +1,21 @@
 extends ../exclude/layout
 
 block continue_head 
-  meta(property='og:description' content='')
-  meta(name='description' content='')
-  meta(name='author' content='')
-  meta(property='og:title' content='MusicSOL')
+  meta(property='og:description' content='Online Music Lessons for Kids and Adults. MusicSOL provides Music lessons online for all instruments.')
+  meta(name='description' content='Online Music Lessons for Kids and Adults. MusicSOL provides Music lessons online for all instruments.')
+  //- meta(name='author' content='')
+  meta(property='og:title' content='Online Music Lessons for Kids and Adults | MusicSOL')
   meta(property='og:url' content='MusicSOL.net')
   meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
   meta(property="og:image" content="https://musicsol.net/assets/img/M-logo.png")
-  title MusicSOL
+  title Online Music Lessons for Kids and Adults | MusicSOL
 
 
 block below-header-container
-  .container.d-flex.h-100.align-items-center.overlay-carousel-text
+  //- .container.overlay-carousel-text#index-header-text
+    //- .mx-auto.text-center.lato
+    h1 Online Music Lessons for Kids and Adults
+  //- .container.d-flex.h-100.align-items-center.overlay-carousel-text
     .mx-auto.text-center
       h1.mx-auto.my-0
         img.logo-big(src='./assets/img/logo.svg' alt='MusicSOL logo')
@@ -20,34 +23,48 @@ block below-header-container
         | Music Lessons for everyone!
       a.btn.btn-primary.js-scroll-trigger(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up!
 
-  include ../exclude/carousel-full
+  include ../exclude/carousel-mini
+    block inside-carousel
+      #index-header-text
+        h1 Online Music Lessons for Kids and Adults
+    
 
 block content
-  .gradient-overlay
+  //- .gradient-overlay
+  #triangle
+    #featuredin
+      img(src="./assets/img/featuredinbw2.png")
   // About
   section#about.about-section.text-center
     .container
       .row
         .col-lg-8.mx-auto
-          h2.text-white.mb-4 About us
-          p.text-white-50
+          h2.mb-4 About us
+          p
             span MusicSOL&nbsp;
-          p.text-white-50
+          p
             | (pronounced myo&#x35E;oziks&omacr;l, SOL being the 5th solfege scale degree, similar sound to soul.)
-          p.text-white-50
-            | MusicSOL, LLC. is one of the world&rsquo;s premiere online music institutes. Our unique conservatory-style learning environment engages our students and encourages them to take their education past the classroom, through world-class education and performances. MusicSOL students study with our distinguished faculty from over 20 countries and nearly every state. MusicSOL teachers are active members of their music communities and have occupied a unique place in music education. Our talented list of instructors come from Italy, Spain, Israel, Greece, England, Mexico, Canada, United States and more!
-          p.text-white-50
+          p
+            | MusicSOL, LLC. is one of the world&rsquo;s premiere online music lessons school. 
+            | Our unique learning environment engages our students and encourages them to take their education past the classroom, 
+            | through world-class education and performances. 
+            | MusicSOL students study with our distinguished faculty from over 20 countries and nearly every state. 
+            | MusicSOL teachers are active members of their music communities and have occupied a unique place in music education. 
+            | Our talented list of instructors come from Italy, Spain, Israel, Greece, England, Mexico, Canada, United States and more!
+          p
             span
-              | MusicSOL is an online conservatory-style music learning program. Our students not only receive lessons on their instrument/s of choice, but also receive instruction in music theory.
-          p.text-white-50
+              | MusicSOL is an online music learning program for all ages. 
+              | Our students not only receive lessons on their instrument/s of choice, 
+              | but also receive dedicated instructions in music theory.
+          p
             span
               | The instructors in our network create their own unique lesson plans based on what is best suited for each individual student.
-          p.text-white-50
+          p
             span Sign up today to have our knowledgeable staff assist you.&nbsp;
-          p.text-white-50
+          p
             span
               | COVID19 precautions: Learn in the comfort and safety of your own home. All lessons currently take place online. We have no binding contracts. We want you to always enjoy the lessons with your teacher. If something changes, you are free to cancel or change teachers at any time.
-          p.text-white-50
+          p
             span Start your musical journey today!
   // howitworks
   section#howitworks.projects-section.bg-light
@@ -61,20 +78,19 @@ block content
           .bg-black.h-100.project
             .d-flex.h-100
               .margin-all-3.project-text.w-100.my-auto.text-lg-left
-                p.mb-0.text-white-50
-                  ol.text-white-50
-                    li
-                      | Tell Us Your Needs
-                      br
-                      |                                                 We&rsquo;ll ask you a few questions so we can put you in touch with the most fitting teachers.
-                    li
-                      | We Assign You to a Teacher
-                      br
-                      |                                                 We will put you in touch with a teacher that best matches your needs.
-                    li
-                      | Book Your Lesson
-                      br
-                      |                                                 Your assigned teacher will contact you to set up your first lesson.
+                ol.text-white
+                  li
+                    | Tell Us Your Needs
+                    br
+                    | We&rsquo;ll ask you a few questions so we can put you in touch with the most fitting teachers.
+                  li
+                    | We Assign You to a Teacher
+                    br
+                    | We will put you in touch with a teacher that best matches your needs.
+                  li
+                    | Book Your Lesson
+                    br
+                    | Your assigned teacher will contact you to set up your first lesson.
                 hr.d-none.d-lg-block.mb-0.mr-0
       // Our mission
       .row.justify-content-center.no-gutters.mb-4.mb-lg-5
@@ -94,7 +110,7 @@ block content
           .bg-black.h-100.project
             .d-flex.h-100
               .margin-all-3.project-text.w-100.my-auto.text-lg-left
-                p.mb-0.text-white-50.right-border-color
+                p.mb-0.text-white.right-border-color
                   | MusicSOL Instructors come from leading music conservatories including Curtis, Berklee, Cleveland Institute of Music, Eastman, Indiana, Oberlin, Juilliard, Manhattan School of Music, Mannes, New England Conservatory, and University of Southern California, among others.
       // Recitals
       .row.justify-content-center.no-gutters.mb-4.mb-lg-5
@@ -114,9 +130,9 @@ block content
           .bg-black.h-100.project
             .d-flex.h-100
               .margin-all-3.project-text.w-100.my-auto.text-lg-left
-                p.mb-0.text-white-50
+                p.mb-0.text-white
                   | All MusicSOL students are enrolled in weekly group music theory classes. Music theory plays a central role in the education of every MusicSOL student. The study of theory includes a wide range of subjects, from hands-on training in musical skills to more advanced research on musical structure and music&rsquo;s composition. The goal of the MusicSOL theory department is not only to provide students with a solid technical foundation, but also to encourage their ongoing intellectual engagement with music as an art form.
-                p.bottom-border-color.mb-0.text-white-50
+                p.bottom-border-color.mb-0.text-white
                   | Music Theory courses begin every month and are capped at 10 students per class to create the optimal learning environment for students of all ages. 
                   br
                   br
@@ -173,7 +189,7 @@ block content
         .col.text-center
           h2.text-white.mb-4 Contact us
       .row
-        .col-md-12.mb-3.mb-md-0
+        .col-md-6.mb-3.mb-md-0
           .card.py-4.h-100
             .card-body.text-center
               i.fas.fa-envelope.text-primary.mb-2
@@ -181,6 +197,23 @@ block content
               hr.my-4
               .small.text-black-50
                 a(href='mailto:info@musicsol.net') info@musicsol.net
+        //- .col-md-4.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-envelope.text-primary.mb-2
+              h4.text-uppercase.m-0 Phone
+              hr.my-4
+              .small.text-black-50
+                a(href='tel:‪2057082043‬') ‪(205) 708-2043‬
+        .col-md-6.mb-3.mb-md-0
+          .card.py-4.h-100
+            .card-body.text-center
+              i.fas.fa-envelope.text-primary.mb-2
+              h4.text-uppercase.m-0 Address
+              hr.my-4
+              .small.text-black-50
+                span 11140 N Kendall Dr, Miami, FL 33176
+      
   
   #success-msg.container.fixed-bottom.text-center
     .row
@@ -208,4 +241,5 @@ block content
 
 
 block continue_scripts
+  link(href='https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Lato:wght@400;700&display=swap&text=1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.%3A%3B%2C%3F%2F()!%24%26-%2B' rel='stylesheet')
   script(src='js/scripts.js')
