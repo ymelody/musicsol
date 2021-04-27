@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run pugw\" \"npm run sass\" ",
-    "pug-build": "pug pug/main/ --out ./",
+    "dev": "concurrently \"npm run pugw\" \"npm run pugwi\" \"npm run sass\" ",
+    "pug-build": "pug pug/main/ --out ./ && pug pug/instruments/ --out ./",
     "pugw": "pug pug/main/ --out ./ --watch",
+    "pugwi": "pug pug/instruments/ --out ./ --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -w ./sass -o ./css --output-style compressed",
     "sass-build": "node-sass ./sass -o ./css --output-style compressed",

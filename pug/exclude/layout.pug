@@ -114,13 +114,18 @@ block footer
   block last_scripts
     // Global site tag (gtag.js) - Google Analytics
     script(src='https://www.googletagmanager.com/gtag/js?id=G-3PBGQ96L4C')
+    // Global site tag (gtag.js) - Google Ads: 1002304511
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=AW-1002304511')
     script.
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-3PBGQ96L4C');
+      gtag('config', 'AW-1002304511');
+      
 
-    script(defer).
+
+    //- script(defer).
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};

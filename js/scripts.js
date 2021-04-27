@@ -10,8 +10,13 @@
     if(location.hash.includes('#thank-you')){
         $("#ty-modal").modal();
         if(location.hash.includes('instructor')){
+            // instructor sign up
             $("#instructor-signup-ty-body").attr("hidden", false);
         }else{
+            // student sign up
+            if(location.hash.includes('ggl')){
+                gtag('event', 'conversion', {'send_to': 'AW-1002304511/_Qj0CMyjs4cCEP_n990D'});
+            }
             $("#student-signup-ty-body").attr("hidden", false);
         }
         location.hash = '';
