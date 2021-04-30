@@ -91,4 +91,22 @@
     // navbarCollapse();
     // Collapse the navbar when page is scrolled
     // $(window).scroll(navbarCollapse);
+
+    // Start of Tawk.to Script
+    setTimeout(function(){
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/608a18325eb20e09cf379c19/1f4dmt13h';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    }, 1000);
+    
+    // End of Tawk.to Script
+
+
+
 })(jQuery); // End of use strict
