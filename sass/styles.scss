@@ -10388,6 +10388,18 @@ body {
   }
 }
 
+#pricing{
+  li{
+    text-align: left;
+    &.st{
+      text-decoration: line-through;
+    }
+  }
+  h5{
+    font-weight: 700;
+  }
+}
+
 
 .about-section {
   padding-top: 10rem;

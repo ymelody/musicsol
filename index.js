@@ -3,7 +3,8 @@ var fs = require('fs');
 var path = require('path'); 
 
 var port = 3000;
-var hostname = '10.0.0.56';
+var hostname = '192.168.1.54';
+hostname = 'localhost';
 
 function send404(response) { 
     response.writeHead(404, { 'Content-Type': 'text/plain' }); 
