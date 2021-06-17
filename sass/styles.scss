@@ -10984,17 +10984,25 @@ body {
   
 
 /*! uncss:ignore start */
-.tw-img-wrapper{
-  position: relative;
-  width: 120px;
-  overflow: hidden;
-  height: 120px;
-  float: left;
-  margin-bottom: 10px;
-}
+// .tw-img-wrapper{
+//   position: relative;
+//   width: 120px;
+//   overflow: hidden;
+//   height: 120px;
+//   float: left;
+//   margin-bottom: 10px;
+// }
 
 #teachworks-directory-profiles .tw-details{
   float: none !important;
   color: #aeaeae !important;
+  display: inline;
 }
+
+#teachworks-directory-profiles .tw-photo{
+  float:initial !important;
+  position:initial !important;
+  display:initial !important;
+}
+
 /*! uncss:ignore end */
