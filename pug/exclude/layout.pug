@@ -21,12 +21,16 @@ head
 // Navigation
 span#page-top
 nav#mainNav.navbar.navbar-shrink.navbar-expand-lg.navbar-light.fixed-top
-  .container
+  .container-fluid
     // <a class="navbar-brand js-scroll-trigger logo-font" href="/#page-top">MusicSOL</a>
     a.navbar-brand.js-scroll-trigger(href='/#page-top')
       img(src='./assets/img/logo.svg' alt='MusicSOL logo')
-    button#menu-btn.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
-      | Menu
+
+    .nav-right-buttons
+      a.phone(href='tel:786-353-6146')
+        img(src='./assets/img/call.png')
+      button#menu-btn.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        | Menu
       //- i.fas.fa-bars(style='margin-left:5px;')
     #navbarResponsive.collapse.navbar-collapse
       ul.navbar-nav.ml-auto
@@ -46,6 +50,9 @@ nav#mainNav.navbar.navbar-shrink.navbar-expand-lg.navbar-light.fixed-top
         
         li.nav-item
           a.nav-link.js-scroll-trigger(href='/#contact') Contact
+
+        li.nav-item.call
+          a.nav-link(href='tel:786-353-6146') 786-353-6146
 // data-ride="carousel"
 header#carousel.carousel.slide.masthead-nobg(data-ride='carousel')
   block below-header-container

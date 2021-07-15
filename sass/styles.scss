@@ -10620,7 +10620,36 @@ h2.below-logo{
   margin-top: 50px;
   color: white;
 }
+.nav-item.call{
+  a{
+    color: #1aafbe !important;
+    font-weight: bold;
+    font-family: 'Lato';
+    font-size: 18px;
+    margin: -2px;
+  }
+}
+@media (max-width: 991px){
+  .nav-item.call{
+    display:none;
+  }
 
+  .nav-right-buttons{
+    a.phone{
+      img{
+        // width: 32px;
+      }
+      padding-right: 20px;
+    }
+  }
+}
+@media (min-width: 991px){
+  .nav-right-buttons{
+    a.phone{
+      display: none;
+    }
+  }
+}
 
 
 
