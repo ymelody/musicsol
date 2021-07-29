@@ -32,15 +32,14 @@ function startupcheck(){
   .then(data=>data.text())
   .then(data=>{
     if(data==='ok'){
-      $("#main-card-body .card-title .fname").text(fname);
-      $(".card-img-top").attr("src", './assets/img/awaitingteacher.png');
+      $("#main-card-body .fname").text(fname);
+      $("#main-card-body .instrument").text(instrument);
       // $("#main-card-body")
       $("#main-card-body").attr("hidden", false);
 
       $("#confirm-student").on('click', confirmStudent);
     }else{
       $("#alreadyassigned").attr("hidden", false);
-      $(".card-img-top").attr("src", './assets/img/alreadyassigned.png');
     }
   })
 }

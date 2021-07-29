@@ -3,8 +3,16 @@ var fs = require('fs');
 var path = require('path'); 
 
 var port = 3000;
-var hostname = '192.168.1.54';
-hostname = 'localhost';
+var hostname = '192.168.14.166';
+let localhost = 'localhost';
+var hostnames = Object.values(
+    require('os').networkInterfaces()
+    ).reduce((r, list) => r.concat(
+        list.reduce(
+            (rr, i) => rr.concat(i.family==='IPv4' && !i.internal && i.address || []), []
+            )), 
+        []);
+hostnames.push(localhost);
 
 function send404(response) { 
     response.writeHead(404, { 'Content-Type': 'text/plain' }); 
@@ -52,7 +60,10 @@ var server = http.createServer(function (req, res) {
      } 
 })
 
+// console.log(hostnames);
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+for(let x in hostnames){
+    server.listen(port, hostnames[x], () => {
+        console.log(`Server running at http://${hostnames[x]}:${port}/`);
+    });
+}

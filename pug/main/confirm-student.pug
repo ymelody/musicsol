@@ -16,11 +16,12 @@ block below-header-container
       h1.mx-auto.my-0
         img.logo-big(src='./assets/img/logo.svg' alt='MusicSOL logo')
       .card#main-card(style='width: 18rem; margin: auto; margin-top: 50px;')
-        //- img.card-img-top(src='' alt='')
         #main-card-body.card-body(hidden='')
-          h5.card-title
+          p.card-text
             | Student Name: 
-            span.fname
+            span.b.fname
+          p.card-text Instrument: 
+            span.b.instrument
           p.card-text
           | Please click the button below to confirm taking on the student
           br
@@ -47,9 +48,9 @@ block content
         .modal-body.text-center
           p#assign-confirm-body
             br
-            | Student has been assigned to you successfully!
+            | Student has been assigned to you successfully! 🎉
             br
-            | Please log into your account to schedule the student.
+            | Please log into your account to schedule with the student.
             br
             a(href='https://musicsol.net/login') Click here to log in
 
