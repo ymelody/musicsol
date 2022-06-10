@@ -17,7 +17,7 @@ block below-header-container
         img.logo-big(src='./assets/img/logo.svg' alt='MusicSOL logo')
       h2.below-logo Teacher list
       p.scroll-down
-        a.animate.js-scroll-trigger(href='#tac') More
+        a#more.animate.js-scroll-trigger(href='#tac') More
 
       
   include ../exclude/carousel-mini
@@ -35,10 +35,18 @@ block content
           if( document.querySelectorAll('.tw-photo').length > 0 ){
             clearInterval(intervalID);
             fixUI();
+            $(document).one("click", "#tw-next-page, #tw-prev-page", function(){
+              //- add smooth scroll to top on the next / prev button
+              $("#more").click();
+            });
           }
         },100);
 
       });
+
+
+    
+
 
       function fixUI(){
         let $twlist = $(document.querySelectorAll('#tw-listing'))
@@ -48,6 +56,7 @@ block content
             $(this).prepend($imgWrp);
         });
       }
+
 
       observer.observe(elementToObserve, {childList: true});
 

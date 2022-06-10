@@ -23,17 +23,42 @@ block below-header-container
         | Music Lessons for everyone!
       a.btn.btn-primary.js-scroll-trigger(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up!
 
-  include ../exclude/carousel-mini
+  //- include ../exclude/carousel-mini
     block inside-carousel
       #index-header-text
         h1 Online Music Lessons for Kids and Adults
     
 
 block content
-  //- .gradient-overlay
-  #triangle
-    #featuredin
-      img(src="./assets/img/featuredinbw2.png")
+  section#home
+    .container-fluid
+      .row
+        .col-lg-12
+          #header
+            //- h1 1
+            //-   span ST
+            h1 Learn 
+              span.line1 Any 
+              | Instrument
+              span.line2 The Easy Way
+              //- br
+              //- | LESSON FREE
+      .row
+        .col-lg-12
+          a.btn.btn-lg.btn-primary.card-link(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up
+            //- span#offerexp (Offer ends on November 1st)
+          //- img(src='./assets/vids/bwguitar.mp4')
+    #vid-container
+      video(autoplay muted loop playsinline preload='metadata')
+        source(src='https://telegra.ph/file/d8ee3e4e53f24c4dc10e4.mp4' type='video/mp4')
+        //- source(src='./assets/vids/bwguitar.webm' type='video/webm')
+        //- source(src='./assets/vids/bwguitar.ogv' type='video/ogg')
+        |   Your browser does not support HTML5 video.
+    //- .gradient-overlay
+    //- #triangle
+      #featuredin
+
+        //- img(src="./assets/img/featuredinbw2.png")
   // About
   section#about.about-section.text-center
     .container
@@ -259,5 +284,5 @@ block content
 
 
 block continue_scripts
-  link(href='https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Lato:wght@400;700&display=swap&text=1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.%3A%3B%2C%3F%2F()!%24%26-%2B' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Nunito:wght@200;400;700&family=Lato:wght@400;700&display=swap&text=1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.%3A%3B%2C%3F%2F()!%24%26-%2B' rel='stylesheet')
   script(src='js/scripts.js')

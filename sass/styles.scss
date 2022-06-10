@@ -47,7 +47,7 @@
   --real100vh: 100vh;
 }
 
-/* @font-face {
+/* @ {
   font-family: logofont;
   src: url(../assets/fonts/Montserrat-Thin.ttf);
 }
@@ -5998,25 +5998,148 @@ a.close.disabled {
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+
+@mixin splashSection {
+  // object-position: 70%;
+// height: 100%;
+// object-fit: cover;
+// z-index: -1;
+// background-image: url('../assets/img/1-1080.jpg');
+// min-height: 100vh;
+// max-height: 100%;
+height: var(--real100vh);
+width: 100%;
+background-image: url(../assets/img/1-1080.jpg);
+background-position: 70%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#home{
+  @include splashSection;
+background-image: none;
+// display: flex;
+// justify-content: center;
+// align-items: 
+// margin-top: 1rem;
+  .container-fluid{
+    position: relative;
+    z-index: 1;
+
+    .row:nth-child(2){
+      text-align: center;
+      .btn{
+        margin-top: 5rem;
+        padding: 1rem 4rem !important;
+
+        @media (max-width: 950px){
+          margin-top: 2rem;
+        }
+      }
+      
+      
+      
+    }
+
+    #header{
+      // z-index: 1;
+      // position: relative;
+      padding: 2rem;
+      
+      h1{
+        font-family: Exo;
+        font-weight: 700;
+        /* color: #93c3ff; */
+        // text-transform: uppercase;
+        background: -webkit-linear-gradient( 45deg, #1aafbe, #9c61dd 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-variant: small-caps;
+        font-size: 4vw;
+        text-align: left;
+        
+        line-height: initial;
+
+        
+        @media (max-width: 950px){
+          
+          text-align: center;
+          line-height: 0.8;
+          font-size: 10vh;
+          /* text-shadow: 0 0 20px #ffffff, 0 0 20px white; */
+         
+          // padding-bottom: 5vh;
+        }
+        span.line1{
+          @media (max-width: 725px){
+            display: block;
+            font-size: 5vh;
+            margin-top: 9px;
+          }
+        }
+        
+        @media (max-width: 414px){
+          font-size: 8vh;
+        }
+
+       
+        span.line2{
+          // vertical-align: 13px;
+          // font-size: smaller;
+          font-variant: initial;
+          text-transform: uppercase;
+          display: block;
+          
+
+          line-height: 0.7;
+          font-size: 10vw;
+
+          @media (max-width: 950px){
+            line-height: 0.9;
+            font-size: 16vh;
+            margin-top: 2rem;
+            
+          }
+
+          @media (max-width: 615px){
+          
+            font-size: 12vh;
+
+          }
+          
+          
+  
+  
+        }
+        
+      }
+      span#offerexp{
+        color: #fff;
+        font-size: 1.2rem;
+        display: block;
+        margin-top: 3rem;
+      }
+    }
+
+    
+    
+  }
+
+
+
+
+}
+
 .carousel-item{
 
   #girl-guitar{
-    // object-position: 70%;
-    // height: 100%;
-    // object-fit: cover;
-    // z-index: -1;
-    // background-image: url('../assets/img/1-1080.jpg');
-    // min-height: 100vh;
-    // max-height: 100%;
-    height: var(--real100vh);
-    width: 100%;
-    background-image: url(../assets/img/1-1080.jpg);
-    background-position: 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include splashSection;
   }
   
 }
+
+
+
 .gradient-overlay{
   top: 0;
   left: 0;
@@ -6757,7 +6880,7 @@ button.bg-black:focus {
 }
 
 .embed-responsive-16by9::before {
-  padding-top: 56.25%;
+  // padding-top: 56.25%;
 }
 
 .embed-responsive-4by3::before {
@@ -7567,9 +7690,9 @@ button.bg-black:focus {
 }
 
 .fixed-top {
-  position: fixed;
+  position: sticky;
   top: 0;
-  right: 0;
+  // right: 0;
   left: 0;
   z-index: 1030;
 }
@@ -7819,6 +7942,10 @@ button.bg-black:focus {
 .mt-5,
 .my-5 {
   margin-top: 3rem !important;
+}
+
+.mt-10{
+  margin-top: 6em !important;
 }
 
 .mr-5,
@@ -11037,3 +11164,47 @@ body {
 }
 
 /*! uncss:ignore end */
+
+
+#vid-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top:0;
+  bottom:0;
+
+  video {
+    // object-position: 444px 140px;
+    // position: fixed;
+    // right: 0;
+    // bottom: 0;
+    min-width: 100%;
+    // height: 100;
+    // z-index: -1;
+    // overflow:hidden;
+
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+    }
+}
+
+  .content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  }
+
+  

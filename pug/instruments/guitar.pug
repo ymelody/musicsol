@@ -1,7 +1,7 @@
 extends ../exclude/layout
 
 block continue_head
-  -var description = "Online guitar Lessons for Kids and Adults. MusicSOL provides guitar lessons online for all ages."
+  -var description = "Guitar Lessons online for Kids and Adults. MusicSOL provides online guitar lessons for all ages."
   -var title = "Online Music Lessons for Kids and Adults | MusicSOL"
   meta(property='og:description' content=description)
   meta(name='description' content=description)
@@ -13,29 +13,11 @@ block continue_head
   title=title
 
 block below-header-container
-  .container.d-flex.h-100.align-items-center.overlay-carousel-text
-    .mx-auto.text-center
-      h1.mx-auto.my-0
-        img.logo-big(src='./assets/img/logo.svg' alt='MusicSOL logo')
-      .card#main-card(style='width: 18rem; margin: auto; margin-top: 50px;')
-        //- img.card-img-top(src='' alt='')
-        #main-card-body.card-body(hidden='')
-          h5.card-title
-            | Student Name: 
-            span.fname
-          p.card-text
-          | Please click the button below to confirm taking on the student
-          br
-          br
-          a.btn.btn-primary#confirm-student(href='#') Confirm student
-        #alreadyassigned.card-body(hidden='')
-          h5.card-title Student already assigned
-          p.card-text
-          | Looks like this student has already been assigned to a teacher.
-          br
-          br
-          a.btn.btn-primary#confirm-student.disabled(tabindex="-1" role="button" aria-disabled="true") Sorry :(
   include ../exclude/carousel-mini
+    block inside-carousel
+    #index-header-text
+      h1 Online Music Lessons for Kids and Adults
+      
 
 block content
   .gradient-overlay

@@ -1,12 +1,13 @@
 var http = require('http'); 
 var fs = require('fs'); 
-var path = require('path'); 
+var path = require('path');
+const OS = require('os'); 
 
 var port = 3000;
-var hostname = '192.168.14.166';
+var hostname = '10.0.0.56';
 let localhost = 'localhost';
 var hostnames = Object.values(
-    require('os').networkInterfaces()
+    OS.networkInterfaces()
     ).reduce((r, list) => r.concat(
         list.reduce(
             (rr, i) => rr.concat(i.family==='IPv4' && !i.internal && i.address || []), []
@@ -28,41 +29,50 @@ var mimeLookup = {
     '.jpg': 'image/jpeg',
     '.ico': 'x-icon',
     '.svg': 'image/svg+xml',
-    '.png': 'image/png'
+    '.png': 'image/png',
+    '.mp4': 'video/mp4',
+    '.webm': 'video/webm',
+    '.ogv': 'video/ogg'
 }; 
 
-var server = http.createServer(function (req, res) {
-  console.log(req.url);
-    if (req.method == 'GET') { 
-         var fileurl; 
-        if (req.url == '/') 
-           fileurl = '/index.html'; 
-        else 
-           fileurl = req.url; 
-        var filepath = path.resolve('.' + fileurl); 
-
-        var fileExt = path.extname(filepath); 
-        var mimeType = mimeLookup[fileExt]; 
-        if (!mimeType) { 
-            send404(res); 
-            return;
-        }
-        fs.exists(filepath, function (exists) {
-            if (!exists) {
-                send404(res); 
-                return; 
-            };
-            res.writeHead(200, { 'content-type': mimeType }); 
-            fs.createReadStream(filepath).pipe(res);
-         }); 
-     } else {
-         send404(res);
-     } 
-})
+class newServer{
+    constructor(){
+        return http.createServer(function (req, res) {
+            console.log(req.url);
+              if (req.method == 'GET') { 
+                   var fileurl; 
+                  if (req.url == '/') 
+                     fileurl = '/index.html'; 
+                  else 
+                     fileurl = req.url; 
+                  var filepath = path.resolve('.' + fileurl); 
+          
+                  var fileExt = path.extname(filepath); 
+                  var mimeType = mimeLookup[fileExt]; 
+                  if (!mimeType) { 
+                      send404(res); 
+                      return;
+                  }
+                  fs.exists(filepath, function (exists) {
+                      if (!exists) {
+                          send404(res); 
+                          return; 
+                      };
+                      res.writeHead(200, { 'content-type': mimeType }); 
+                      fs.createReadStream(filepath).pipe(res);
+                   }); 
+               } else {
+                   send404(res);
+               } 
+          })
+    }
+    
+} 
 
 // console.log(hostnames);
 
 for(let x in hostnames){
+    let server = new newServer();
     server.listen(port, hostnames[x], () => {
         console.log(`Server running at http://${hostnames[x]}:${port}/`);
     });
