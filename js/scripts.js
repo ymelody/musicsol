@@ -87,6 +87,12 @@
         document.documentElement.style.setProperty("--real100vh", value)
     }
     set100vhVar();
+
+    function setCssNavHeight(){
+        let navHeight = document.getElementById('mainNav').clientHeight + 'px';
+        document.documentElement.style.setProperty("--navHeight", navHeight);
+    }
+    setCssNavHeight();
     // Collapse now if page is not at top
     // navbarCollapse();
     // Collapse the navbar when page is scrolled
@@ -109,4 +115,8 @@
 
 
 
+
+
 })(jQuery); // End of use strict
+
+

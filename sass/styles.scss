@@ -6007,7 +6007,7 @@ a.close.disabled {
 // background-image: url('../assets/img/1-1080.jpg');
 // min-height: 100vh;
 // max-height: 100%;
-height: var(--real100vh);
+height: calc(var(--real100vh) - var(--navHeight));
 width: 100%;
 background-image: url(../assets/img/1-1080.jpg);
 background-position: 70%;
@@ -6022,7 +6022,7 @@ background-image: none;
 // justify-content: center;
 // align-items: 
 // margin-top: 1rem;
-  .container-fluid{
+  .container{
     position: relative;
     z-index: 1;
 
@@ -6044,73 +6044,43 @@ background-image: none;
     #header{
       // z-index: 1;
       // position: relative;
-      padding: 2rem;
+      // padding: 2rem;
       
       h1{
         font-family: Exo;
         font-weight: 700;
         /* color: #93c3ff; */
         // text-transform: uppercase;
-        background: -webkit-linear-gradient( 45deg, #1aafbe, #9c61dd 80%);
+        background: -webkit-linear-gradient( 90deg, #1aafbe, #90caf7 80%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-variant: small-caps;
-        font-size: 4vw;
+        font-size: 8vw;
         text-align: left;
+
+        text-transform: uppercase;
         
-        line-height: initial;
+        line-height: 1;
 
         
         @media (max-width: 950px){
           
           text-align: center;
           line-height: 0.8;
-          font-size: 10vh;
+
+          line-height: 0.9;
+          font-size: 16vh;
+          // margin-top: 2rem;
           /* text-shadow: 0 0 20px #ffffff, 0 0 20px white; */
          
           // padding-bottom: 5vh;
         }
-        span.line1{
-          @media (max-width: 725px){
-            display: block;
-            font-size: 5vh;
-            margin-top: 9px;
-          }
+
+        @media (max-width: 615px){
+        
+          font-size: 12vh;
+
         }
         
-        @media (max-width: 414px){
-          font-size: 8vh;
-        }
-
-       
-        span.line2{
-          // vertical-align: 13px;
-          // font-size: smaller;
-          font-variant: initial;
-          text-transform: uppercase;
-          display: block;
-          
-
-          line-height: 0.7;
-          font-size: 10vw;
-
-          @media (max-width: 950px){
-            line-height: 0.9;
-            font-size: 16vh;
-            margin-top: 2rem;
-            
-          }
-
-          @media (max-width: 615px){
-          
-            font-size: 12vh;
-
-          }
-          
-          
-  
-  
-        }
         
       }
       span#offerexp{
@@ -6119,8 +6089,16 @@ background-image: none;
         display: block;
         margin-top: 3rem;
       }
+
+
+      
     }
 
+    
+    #getStarted{
+      font-size:2em;
+      // margin-bottom:1em;
+    }
     
     
   }

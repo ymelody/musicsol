@@ -31,19 +31,26 @@ block below-header-container
 
 block content
   section#home
-    .container-fluid
+    .container(style='height:90%;').d-flex.align-items-center
       .row
-        .col-lg-12
+        .col-lg-6
           #header
-            //- h1 1
-            //-   span ST
-            h1 Learn 
-              span.line1 Any 
-              | Instrument
-              span.line2 The Easy Way
-              //- br
-              //- | LESSON FREE
-      .row
+
+            //- h1 Learn 
+            //-   span.line1 Any 
+            //-   | Instrument
+            //-   span.line2 The Easy Way
+
+            //- h1 Learn Any Instrument
+            //- span.line2 The Easy Way
+
+            h1 The #1 Online Music School
+        .col-lg-6.d-flex.align-items-end.justify-content-center.mb-lg-3.mt-5
+          a#getStarted.btn.btn-lg.btn-primary.card-link(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Get started
+          
+
+
+      //- .row
         .col-lg-12
           a.btn.btn-lg.btn-primary.card-link(target='_new' href='https://musicsol.teachworks.com/form/student-signup') Sign me up
             //- span#offerexp (Offer ends on November 1st)
